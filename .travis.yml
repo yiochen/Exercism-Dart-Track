@@ -1,0 +1,107 @@
+# Created with package:mono_repo v2.1.0
+language: dart
+
+jobs:
+  include:
+    - stage: unit_test
+      name: "SDK: stable; PKG: acronym; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="acronym"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: armstrong-numbers; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"armstrong-numbers\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: bob; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="bob"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: difference-of-squares; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"difference-of-squares\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: gigasecond; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="gigasecond"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: hamming; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="hamming"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: hello-world; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"hello-world\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: isogram; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="isogram"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: leap; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="leap"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: phone-number; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"phone-number\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: raindrops; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="raindrops"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: resistor-color; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"resistor-color\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: resistor-color-duo; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"resistor-color-duo\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: reverse-string; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"reverse-string\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: scrabble-score; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"scrabble-score\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: space-age; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"space-age\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: two-fer; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"two-fer\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: word-count; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"word-count\""
+      script: ./tool/travis.sh test
+
+stages:
+  - unit_test
+
+# Only building master means that we don't run two builds for each pull request.
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - "$HOME/.pub-cache"
