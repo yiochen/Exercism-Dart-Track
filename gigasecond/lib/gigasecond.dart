@@ -1,3 +1,3 @@
-class Gigasecond {
-  // Put your code here
+DateTime add(DateTime birthday) {
+  return birthday.add(Duration(seconds: 1000000000));
 }
