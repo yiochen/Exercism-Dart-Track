@@ -50,6 +50,23 @@
         "clear": false
       },
       "problemMatcher": []
+    },
+    {
+      "label": "mono_pkg",
+      "type": "shell",
+      "command": "printf \"dart:\n  - stable\" > mono_pkg.yaml",
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "never",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": []
     }
   ]
 }
