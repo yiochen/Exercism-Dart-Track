@@ -9,14 +9,44 @@ jobs:
       env: PKGS="acronym"
       script: ./tool/travis.sh test
     - stage: unit_test
+      name: "SDK: stable; PKG: allergies; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="allergies"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: anagram; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="anagram"
+      script: ./tool/travis.sh test
+    - stage: unit_test
       name: "SDK: stable; PKG: armstrong-numbers; TASKS: `pub run test`"
       dart: stable
       env: "PKGS=\"armstrong-numbers\""
       script: ./tool/travis.sh test
     - stage: unit_test
+      name: "SDK: stable; PKG: binary-search-tree; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"binary-search-tree\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
       name: "SDK: stable; PKG: bob; TASKS: `pub run test`"
       dart: stable
       env: PKGS="bob"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: collatz-conjecture; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"collatz-conjecture\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: darts; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="darts"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: diamond; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="diamond"
       script: ./tool/travis.sh test
     - stage: unit_test
       name: "SDK: stable; PKG: difference-of-squares; TASKS: `pub run test`"
@@ -39,6 +69,11 @@ jobs:
       env: "PKGS=\"hello-world\""
       script: ./tool/travis.sh test
     - stage: unit_test
+      name: "SDK: stable; PKG: isbn-verifier; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"isbn-verifier\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
       name: "SDK: stable; PKG: isogram; TASKS: `pub run test`"
       dart: stable
       env: PKGS="isogram"
@@ -49,9 +84,44 @@ jobs:
       env: PKGS="leap"
       script: ./tool/travis.sh test
     - stage: unit_test
+      name: "SDK: stable; PKG: luhn; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="luhn"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: matching-brackets; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"matching-brackets\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: minesweeper; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="minesweeper"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: nth-prime; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"nth-prime\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: pangram; TASKS: `pub run test`"
+      dart: stable
+      env: PKGS="pangram"
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: pascals-triangle; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"pascals-triangle\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
       name: "SDK: stable; PKG: phone-number; TASKS: `pub run test`"
       dart: stable
       env: "PKGS=\"phone-number\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: prime-factors; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"prime-factors\""
       script: ./tool/travis.sh test
     - stage: unit_test
       name: "SDK: stable; PKG: raindrops; TASKS: `pub run test`"
@@ -72,6 +142,11 @@ jobs:
       name: "SDK: stable; PKG: reverse-string; TASKS: `pub run test`"
       dart: stable
       env: "PKGS=\"reverse-string\""
+      script: ./tool/travis.sh test
+    - stage: unit_test
+      name: "SDK: stable; PKG: rna-transcription; TASKS: `pub run test`"
+      dart: stable
+      env: "PKGS=\"rna-transcription\""
       script: ./tool/travis.sh test
     - stage: unit_test
       name: "SDK: stable; PKG: scrabble-score; TASKS: `pub run test`"
